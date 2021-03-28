@@ -10,7 +10,7 @@ pipeline {
   // Triggers define how the job is triggered.
   // Jobs may still be triggered manually or by webhook as well here.
   triggers {
-    cron('@daily')
+    cron('H/5 * * * *')
   }
 
   // Options covers all other job properties or wrapper functions that apply to entire Pipeline.
